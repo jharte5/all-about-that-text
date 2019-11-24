@@ -1,6 +1,6 @@
 
 
-const makeNumberBig = () => {
+const makeNumberBig = function () {
     let val = document.querySelector('#user-input').value;
     const finalValue = biggify(val);
     generateList(finalValue)
