@@ -3,31 +3,31 @@
 const makeNumberBig = function () {
     let val = document.querySelector('#user-input').value;
     const finalValue = biggify(val);
-    generateList(finalValue)
+    generateResult(finalValue)
 }
 
 const countNumDown = function () {
     let val = document.querySelector('#user-input').value;
     const finalValue = nasafy(val);
-    generateList(finalValue)
+    generateResult(finalValue)
 }
 const makeCrazy = function () {
     let val = document.querySelector('#user-input').value;
     const finalValue = crazify(val);
-    generateList(finalValue)
+    generateResult(finalValue)
 }
 const makeBackwards = function () {
     let val = document.querySelector('#user-input').value;
     const finalValue = reversify(val);
-    generateList(finalValue)
+    generateResult(finalValue)
 }
 const makeTitleCase = function () {
     let val = document.querySelector('#user-input').value;
     const finalValue = titleify(val);
-    generateList(finalValue)
+    generateResult(finalValue)
 }
 
-const generateList = (list) => {
+const generateResult = (list) => {
     const result = document.querySelector(".result");
     result.innerText = `${list}`;
 }
